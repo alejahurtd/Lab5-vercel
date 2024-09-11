@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Passenger</title>
+
+		<link rel="stylesheet" href="stylespassenger.css" />
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="passenger.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="login">
+				<h1>Passenger Login</h1>
+				<input type="text" id="passenger-name" placeholder="Enter your name" />
+				<button id="login-btn">Login</button>
+			</div>
+
+			<!-- Sección de conductores  -->
+			<div id="available-drivers">
+				<h1>Available Drivers</h1>
+				<div id="drivers-list"></div>
+
+				<h2>Where are you going?</h2>
+				<input type="text" id="origin" placeholder="Where are you?" />
+				<input type="text" id="destination" placeholder="Where to?" />
+				<button id="request-ride-btn">Request Ride</button>
+			</div>
+
+			<div id="searching">
+				<h1>Searching for Drivers...</h1>
+				<div id="search-results"></div>
+			</div>
+
+			<!-- Viaje aceptado -->
+			<div id="trip-info">
+				<h1>Trip Information</h1>
+				<p id="trip-details"></p>
+			</div>
+		</div>
+	</body>
+</html>

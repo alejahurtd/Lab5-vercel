@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
+}
+
+body {
+	background-color: #f5f5f5;
+	color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 350px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 24px;
+	color: #2c3e50;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 18px;
+	color: #3498db;
+	margin: 10px 0;
+}
+
+/* Input */
+input[type='text'] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+
+/* Botones */
+button {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #2ecc71;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+
+button:hover {
+	background-color: #27ae60;
+}
+
+#available-drivers,
+#searching,
+#trip-info {
+	display: none;
+}
+
+#trip-details p {
+	margin: 10px 0;
+	font-size: 16px;
+	color: #2c3e50;
+}
+
+#drivers-list p {
+	font-size: 16px;
+	color: #16a085;
+	margin-bottom: 5px;
+}

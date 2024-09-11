@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Driver</title>
+		<!-- Enlazar el archivo CSS -->
+		<link rel="stylesheet" href="stylesdriver.css" />
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="driver.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Sección de inicio de sesión del conductor -->
+			<div id="login">
+				<h1>Driver Login</h1>
+				<input type="text" id="driver-name" placeholder="Enter your name" />
+				<button id="login-btn">Login</button>
+			</div>
+
+			<!-- Sección para seleccionar el vehículo -->
+			<div id="vehicle-selection" style="display: none">
+				<h1>Select Vehicle</h1>
+				<select id="vehicle-select">
+					<option value="AGN342">AGN342</option>
+					<option value="LWK726">LWK726</option>
+					<option value="KMH456">KMH456</option>
+					<option value="FGH456">FGH456</option>
+					<option value="PLO781">PLO781</option>
+				</select>
+				<button id="next-btn">Next</button>
+			</div>
+
+			<!-- Sección de información del viaje con activar/desactivar -->
+			<div id="trip-info" style="display: none">
+				<h1>Trip Information</h1>
+				<button id="activate-btn">Activate</button>
+				<button id="deactivate-btn">Deactivate</button>
+			</div>
+
+			<!-- Sección para mostrar un nuevo viaje cuando el conductor lo acepta -->
+			<div id="new-trip" style="display: none">
+				<h1>New Trip</h1>
+				<p id="trip-details"></p>
+				<!-- Botón para aceptar el viaje -->
+				<button id="accept-trip-btn">Aceptar Viaje</button>
+			</div>
+
+			<!-- Sección para mostrar viaje en progreso con opción de iniciar/finalizar -->
+			<div id="trip-progress" style="display: none">
+				<h1>Viaje en Progreso</h1>
+				<p id="progress-details"></p>
+				<!-- Botones para iniciar o finalizar el viaje -->
+				<button id="start-trip-btn" style="display: none">Iniciar Viaje</button>
+				<button id="finish-trip-btn" style="display: none">Finalizar Viaje</button>
+			</div>
+		</div>
+	</body>
+</html>
